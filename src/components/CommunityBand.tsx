@@ -24,14 +24,14 @@ export function CommunityBand() {
             <p className="font-display text-[0.7rem] font-bold uppercase tracking-[0.18em] text-cream-50/75">
               Community · Support · Updates
             </p>
-            <h2 className="mt-1.5 font-display text-3xl sm:text-4xl">Study group chat</h2>
+            <h2 className="mt-1.5 font-display text-3xl sm:text-4xl">Telegram · @compassat</h2>
             <p className="mt-2.5 max-w-xl text-cream-50/85">
-              Join for delivery help, score pathways and weekly study sprints —
+              Join for delivery help, score pathways, and proctor tips —
               the same channel linked in the header and footer.
             </p>
           </div>
           <Button as="a" href="#community" variant="outline" size="lg">
-            Open chat
+            Open Telegram
           </Button>
         </div>
       </motion.div>

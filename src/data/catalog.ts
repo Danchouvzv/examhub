@@ -84,22 +84,22 @@ export const families: ExamFamily[] = [
     subtitle: "Standard · Pro · Premium — digital SAT on macOS & Windows",
     live: true,
     tiers: buildTiers([
-      ["standard", 190, undefined, [
-        "Adaptive practice engine",
-        "3,000-question digital SAT bank",
-        "Reading & Writing + Math coverage",
+      ["standard", 290, undefined, [
+        "AI-assisted practice engine",
+        "Normal sandbox environment",
+        "Full digital SAT coverage (RW + Math)",
         "Score tracking dashboard",
       ]],
-      ["pro", 450, "Most popular", [
-        "Everything in Standard",
-        "Weekly tutor-reviewed error log",
-        "Module-level weak-spot drills",
-        "Priority chat support",
+      ["pro", 550, "Most popular", [
+        "Guaranteed 1580+ SAT score",
+        "Enhanced sandbox isolation",
+        "Leak-aware adaptive modules",
+        "Priority live support",
       ]],
-      ["premium", 890, "Best results", [
-        "Six 1:1 strategy sessions",
-        "Eight proctored full-length mocks",
-        "Essay & pacing clinic",
+      ["premium", 990, "Best results", [
+        "1600 every time — perfect-score guarantee",
+        "Maximum-security sandbox stack",
+        "1:1 strategy coaching session",
         "Unlimited retake practice packs",
       ]],
     ]),
@@ -109,22 +109,21 @@ export const families: ExamFamily[] = [
     name: "ACT",
     subtitle: "Standard · Pro · Premium — per-section builds for each OS",
     tiers: buildTiers([
-      ["standard", 190, undefined, [
-        "Adaptive ACT practice",
+      ["standard", 260, undefined, [
+        "AI-assisted ACT practice",
         "English, Math, Reading, Science modules",
-        "Section timing trainer",
         "Composite score tracking",
       ]],
-      ["pro", 450, "Most popular", [
-        "Everything in Standard",
-        "Science passage speed labs",
-        "Tutor-reviewed error log",
-        "Priority chat support",
+      ["pro", 610, "Most popular", [
+        "Guaranteed 36 ACT pathway",
+        "Enhanced sandbox isolation",
+        "Leak-aware adaptive modules",
+        "Priority live support",
       ]],
-      ["premium", 890, "Best results", [
-        "Six 1:1 strategy sessions",
-        "Eight timed full-length mocks",
-        "Superscore planning review",
+      ["premium", 1200, "Best results", [
+        "Guaranteed 36 ACT result pathway",
+        "Maximum-security sandbox stack",
+        "1:1 strategy coaching session",
         "Unlimited retake practice packs",
       ]],
     ]),
@@ -134,23 +133,22 @@ export const families: ExamFamily[] = [
     name: "GRE",
     subtitle: "Standard · Pro · Premium — General Test, quant-first pathway",
     tiers: buildTiers([
-      ["standard", 190, undefined, [
-        "GRE General practice engine",
+      ["standard", 260, undefined, [
+        "AI-assisted GRE General practice",
         "Quant · Verbal · AWA coverage",
-        "Vocabulary spaced-repetition deck",
         "Score tracking dashboard",
       ]],
-      ["pro", 450, "Most popular", [
-        "Everything in Standard",
-        "Adaptive Quant/Verbal sets",
-        "AWA feedback on 6 essays",
-        "Priority chat support",
+      ["pro", 610, "Most popular", [
+        "High-score GRE pathway",
+        "Enhanced sandbox isolation",
+        "Adaptive Quant/Verbal modules",
+        "Priority live support",
       ]],
-      ["premium", 890, "Best results", [
-        "Six 1:1 coaching sessions",
-        "Unlimited AWA reviews",
-        "Full-length adaptive mocks",
-        "Application timeline planning",
+      ["premium", 1200, "Best results", [
+        "Top-score GRE pathway",
+        "Maximum-security sandbox stack",
+        "1:1 strategy coaching session",
+        "Unlimited retake practice packs",
       ]],
     ]),
   },
@@ -159,22 +157,21 @@ export const families: ExamFamily[] = [
     name: "GMAT",
     subtitle: "Standard · Pro · Premium — Focus Edition syllabus",
     tiers: buildTiers([
-      ["standard", 190, undefined, [
-        "GMAT Focus practice engine",
+      ["standard", 260, undefined, [
+        "AI-assisted GMAT Focus practice",
         "Quant · Verbal · Data Insights",
-        "Timing and pacing drills",
         "Score tracking dashboard",
       ]],
-      ["pro", 450, "Most popular", [
-        "Everything in Standard",
+      ["pro", 610, "Most popular", [
+        "High-score GMAT Focus pathway",
+        "Enhanced sandbox isolation",
         "Adaptive Data Insights modules",
-        "Tutor-reviewed error log",
-        "Priority chat support",
+        "Priority live support",
       ]],
-      ["premium", 890, "Best results", [
-        "Six 1:1 coaching sessions",
-        "Eight adaptive full-length mocks",
-        "Business-school shortlist review",
+      ["premium", 1200, "Best results", [
+        "Top-score GMAT Focus pathway",
+        "Maximum-security sandbox stack",
+        "1:1 strategy coaching session",
         "Unlimited retake practice packs",
       ]],
     ]),
@@ -208,7 +205,7 @@ const readinessSuite: Product = {
     "Timezone-aware exam-day concierge",
     "Backup plan if hardware fails",
   ],
-  price: 190,
+  price: 260,
   category: "readiness",
   featured: true,
   badge: "Campus pick",
@@ -232,7 +229,7 @@ const readiness: Product[] = [
     kicker: "Readiness",
     blurb,
     features,
-    price: 190,
+    price: 260,
     category: "readiness" as Category,
     badge,
   })),

@@ -25,7 +25,7 @@ export function Footer() {
               <GraduationCap className="size-4" />
             </span>
             <span className="font-display text-xl font-extrabold">
-              Exam<span className="text-clay-500">Hub</span>
+              Compas<span className="text-clay-500"> Sat</span>
             </span>
           </div>
           <p className="mt-4 max-w-sm text-[0.95rem] leading-relaxed text-ink-500">
@@ -57,7 +57,7 @@ export function Footer() {
 
       <div className="border-t-2 border-dashed border-ink-300/50">
         <p className="mx-auto max-w-6xl px-4 py-6 text-center text-sm text-ink-500 sm:px-6">
-          © {new Date().getFullYear()} ExamHub · Built for students worldwide
+          © {new Date().getFullYear()} Compas Sat · Built for students worldwide
         </p>
       </div>
     </footer>
