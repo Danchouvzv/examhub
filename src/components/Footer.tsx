@@ -3,15 +3,15 @@ import { GraduationCap } from "lucide-react";
 const columns = [
   {
     title: "Catalog",
-    links: ["SAT tiers", "ACT tiers", "GRE tiers", "GMAT tiers", "Exam-day readiness"],
+    links: [["SAT tiers", "/category/sat"], ["ACT tiers", "/category/act"], ["Proctor & lockdown", "/category/proctoring"], ["Contests & olympiads", "/category/contests"], ["Extra tools", "/category/tools"]],
   },
   {
     title: "Explore",
-    links: ["Contests & olympiads", "Extra tools", "Bundles"],
+    links: [["GRE tiers", "/category/gre"], ["GMAT tiers", "/category/gmat"], ["Bundles", "/category/bundles"]],
   },
   {
     title: "Resources",
-    links: ["Research mentorship", "Internships", "Blog", "Sitemap"],
+    links: [["Research papers", "/research"], ["Internships", "/internships"], ["Blog", "/blog"], ["Sitemap", "/sitemap"]],
   },
 ];
 
@@ -33,20 +33,20 @@ export function Footer() {
             research mentorship and internship matching — built for students
             worldwide.
           </p>
-          <p className="mt-4 text-sm text-ink-500">Support 24/7 · live chat on site</p>
+          <p className="mt-4 text-sm text-ink-500">Support 24/7 · Telegram <a href="https://t.me/compassat" className="font-semibold text-clay-600">@compassat</a></p>
         </div>
 
         {columns.map((column) => (
           <div key={column.title}>
             <p className="eyebrow">{column.title}</p>
             <ul className="mt-3 flex flex-col gap-2">
-              {column.links.map((link) => (
-                <li key={link}>
+              {column.links.map(([label, href]) => (
+                <li key={href}>
                   <a
-                    href="#catalog"
+                    href={href}
                     className="focus-ring rounded text-[0.95rem] font-semibold text-ink-700 transition-colors hover:text-clay-500"
                   >
-                    {link}
+                    {label}
                   </a>
                 </li>
               ))}

@@ -30,7 +30,7 @@ export function CommunityBand() {
               the same channel linked in the header and footer.
             </p>
           </div>
-          <Button as="a" href="#community" variant="outline" size="lg">
+          <Button as="a" href="https://t.me/compassat" variant="outline" size="lg">
             Open Telegram
           </Button>
         </div>

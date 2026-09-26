@@ -10,6 +10,7 @@ import { CatalogGrid } from "./components/CatalogGrid";
 import { ServicesSection } from "./components/ServicesSection";
 import { Footer } from "./components/Footer";
 import { ChatBubble } from "./components/ChatBubble";
+import { RoutePage } from "./components/RoutePage";
 import { families, products, type Category } from "./data/catalog";
 
 const byCategory = (category: Category) =>
@@ -36,6 +37,11 @@ export default function App() {
     setQuery("");
     setCategory("all");
   };
+
+  const pathname = window.location.pathname;
+  if (pathname !== "/" && pathname !== "/index.html") {
+    return <RoutePage pathname={pathname} />;
+  }
 
   return (
     <div className="min-h-screen">
@@ -69,19 +75,20 @@ export default function App() {
         ))}
 
         <CollectionSection
-          id="readiness"
-          eyebrow="Exam day"
-          title="Readiness checks"
-          subtitle="Device, room and account checks so nothing goes wrong on test day — one shared pack rather than a separate one per exam."
-          products={byCategory("readiness")}
+          id="proctor"
+          eyebrow="Lockdown browsers"
+          title="Proctor tools"
+          subtitle="LockDown Browser, Honorlock, Proctorio & 30+ platforms — one shared universal software delivery pack."
+          products={byCategory("proctor")}
+          limit={7}
           featuredFirst
         />
 
         <CollectionSection
           id="bundles"
           eyebrow="Value pack"
-          title="Bundles"
-          subtitle="Two or three pathways in a single checkout, priced below the sum of the parts."
+          title="Pro bundle"
+          subtitle="SAT + ACT + lockdown stack in one checkout."
           products={byCategory("bundles")}
           featuredFirst
         />
@@ -90,7 +97,7 @@ export default function App() {
           id="contests"
           eyebrow="Olympiads"
           title="Contests & olympiads"
-          subtitle="USACO divisions, math and science olympiads, and rated competitive-programming coaching."
+          subtitle="USACO and major olympiads"
           products={byCategory("contests")}
           limit={9}
         />
@@ -99,7 +106,7 @@ export default function App() {
           id="tools"
           eyebrow="Extras"
           title="Extra tools"
-          subtitle="Small, useful add-ons for study planning, language tests and applications."
+          subtitle="Useful extras for study & delivery"
           products={byCategory("tools")}
           limit={6}
         />

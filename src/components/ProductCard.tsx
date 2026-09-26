@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import type { Product } from "../data/catalog";
 import { Button, Check, Pill } from "./primitives";
+import { productHref } from "../data/catalog";
 import { cn } from "../lib/cn";
 
 const tierTone = {
@@ -71,7 +72,7 @@ export function ProductCard({
           <p className="text-sm text-ink-500">From</p>
           <p className="font-display text-3xl font-extrabold">${product.price}</p>
         </div>
-        <Button size="sm">
+        <Button as="a" href={productHref(product)} size="sm">
           View <ArrowRight className="size-4" />
         </Button>
       </div>

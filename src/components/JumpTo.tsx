@@ -3,7 +3,7 @@ const jumps = [
   { label: "ACT", href: "#act" },
   { label: "GRE", href: "#gre" },
   { label: "GMAT", href: "#gmat" },
-  { label: "Readiness", href: "#readiness" },
+  { label: "Proctor", href: "#proctor" },
   { label: "Contests", href: "#contests" },
 ];
 

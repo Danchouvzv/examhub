@@ -26,22 +26,22 @@ const trustTiles = [
   {
     icon: ShieldCheck,
     title: "Secure checkout",
-    body: "Card, Apple Pay and bank transfer via a PCI-compliant processor",
+    body: "Gift cards + BTC, SOL, ETH, BitPay & more",
   },
   {
     icon: CreditCard,
-    title: "Flexible plans",
-    body: "Pay once or split across three months at no extra cost",
+    title: "Universal proctor",
+    body: "One stack for LockDown, Honorlock, Proctorio & 30+",
   },
   {
     icon: Wallet,
-    title: "Refund window",
-    body: "Full refund within 14 days if you have not started the course",
+    title: "Live crypto checkout",
+    body: "SOL · USDC · ETH · LTC with QR + G2A voucher option",
   },
   {
     icon: Bitcoin,
-    title: "Student pricing",
-    body: "Need-based discounts for verified school email addresses",
+    title: "Crypto friendly",
+    body: "On-chain wallets or hosted rails — paste TX / invoice",
   },
 ];
 
@@ -86,13 +86,13 @@ export function TrustSection() {
               <div className="mt-7 rounded-2xl border-2 border-dashed border-ink-300/60 p-5">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
-                    <h3 className="font-display text-xl">Score milestones shared by students</h3>
+                    <h3 className="font-display text-xl">Real 1600 score reports + open reviews</h3>
                     <p className="mt-1 text-sm text-ink-500">
-                      Names hidden · shared with permission
+                      Perfect-score screenshots (names censored)
                     </p>
                   </div>
                   <Button variant="soft" size="sm" onClick={() => setShowPhotos((value) => !value)}>
-                    {showPhotos ? "Hide score cards" : "Show score cards"}
+                    {showPhotos ? "Hide score photos" : "Show score photos"}
                   </Button>
                 </div>
 
@@ -109,7 +109,7 @@ export function TrustSection() {
                           <span>{vouch.date}</span>
                         </div>
                         <p className="mt-3 font-display text-4xl font-extrabold">{vouch.score}</p>
-                        <p className="mt-1 text-sm text-ink-500">Digital SAT · June 2026</p>
+                        <p className="mt-1 text-sm text-ink-500">SAT June 6, 2026 · photo vouch</p>
                         <span className="mt-3 inline-block rounded-full bg-moss-600/10 px-2.5 py-1 text-xs font-bold text-moss-600">
                           Verified
                         </span>

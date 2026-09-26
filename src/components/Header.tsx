@@ -5,19 +5,20 @@ import { Button } from "./primitives";
 import { cn } from "../lib/cn";
 
 const navLinks = [
-  { label: "SAT", href: "#sat" },
-  { label: "ACT", href: "#act" },
-  { label: "GRE", href: "#gre" },
-  { label: "GMAT", href: "#gmat" },
-  { label: "Readiness", href: "#readiness" },
+  { label: "SAT", href: "/category/sat" },
+  { label: "ACT", href: "/category/act" },
+  { label: "GRE", href: "/category/gre" },
+  { label: "GMAT", href: "/category/gmat" },
+  { label: "Proctor", href: "/category/proctoring" },
 ];
 
 const moreLinks = [
-  { label: "Contests & olympiads", href: "#contests" },
-  { label: "Extra tools", href: "#tools" },
-  { label: "Bundles", href: "#bundles" },
-  { label: "Research mentorship", href: "#services" },
-  { label: "Internships", href: "#services" },
+  { label: "Contests & olympiads", href: "/category/contests" },
+  { label: "Extra tools", href: "/category/tools" },
+  { label: "Bundles", href: "/category/bundles" },
+  { label: "Research papers", href: "/research" },
+  { label: "Internships", href: "/internships" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export function Header() {
@@ -63,7 +64,7 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex h-[72px] max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <a href="#top" className="focus-ring flex items-center gap-2.5 rounded-full">
+        <a href="/" className="focus-ring flex items-center gap-2.5 rounded-full">
           <span className="grid size-10 place-items-center rounded-full border-2 border-ink-900 bg-clay-500 text-cream-50 shadow-[2px_3px_0_0_var(--color-ink-900)]">
             <GraduationCap className="size-5" />
           </span>
@@ -119,11 +120,11 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button as="a" href="#community" variant="outline" size="sm" className="hidden sm:inline-flex">
+          <Button as="a" href="https://t.me/compassat" variant="outline" size="sm" className="header-desktop-action hidden sm:inline-flex">
             <Send className="size-4" />
             Telegram
           </Button>
-          <Button size="sm" className="hidden sm:inline-flex">
+          <Button as="a" href="/login" size="sm" className="header-desktop-action hidden sm:inline-flex">
             Sign in
           </Button>
           <button
@@ -158,10 +159,10 @@ export function Header() {
                 </a>
               ))}
               <div className="mt-2 flex gap-2">
-                <Button as="a" href="#community" variant="outline" size="sm">
+                <Button as="a" href="https://t.me/compassat" variant="outline" size="sm">
                   <Send className="size-4" /> Telegram
                 </Button>
-                <Button size="sm">Sign in</Button>
+                <Button as="a" href="/login" size="sm">Sign in</Button>
               </div>
             </div>
           </motion.nav>

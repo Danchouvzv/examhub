@@ -44,8 +44,7 @@ export function ExamSection({
           Standard · Pro · Premium — what changes
         </h3>
         <p className="mt-2 max-w-2xl text-ink-500">
-          Same exam family. Each step up adds practice depth, review time and
-          coaching — pick the tier that matches your goal.
+          Same exam family. Clear upgrades in sandbox, support, and pathway — pick the tier that matches your goal.
         </p>
 
         <div className="mt-7">

@@ -7,17 +7,19 @@ const cards = [
     id: "research",
     icon: FileText,
     title: "Research papers",
-    price: "Flat $1,080 package",
-    body: "Free Q1/Q2 and add-ons with Stripe checkout.",
+    price: "Flat $1,040 package",
+    body: "Free Q1/Q2 and add-ons. Payment details are confirmed with support.",
     cta: "Open research quote",
+    href: "/research",
   },
   {
     id: "internships",
     icon: Briefcase,
     title: "Internships",
-    price: "Max $1,620 base",
+    price: "$975 flat",
     body: "Field + state search with weekly salary estimate.",
     cta: "Open internship form",
+    href: "/internships",
   },
 ];
 
@@ -42,7 +44,7 @@ export function ServicesSection() {
               {card.price}
             </p>
             <p className="mt-3 flex-1 leading-relaxed text-ink-700">{card.body}</p>
-            <Button variant="outline" className="mt-6 self-start">
+            <Button as="a" href={card.href} variant="outline" className="mt-6 self-start">
               {card.cta} <ArrowUpRight className="size-4" />
             </Button>
           </motion.div>

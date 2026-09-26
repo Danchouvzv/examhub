@@ -56,13 +56,13 @@ export function Hero({ query, onQuery, active, onCategory }: HeroProps) {
           </div>
 
           <h1 className="mt-7 max-w-3xl font-display text-[2.6rem] leading-[1.06] sm:text-6xl">
-            Exam prep that actually{" "}
+            Exam prep that hits{" "}
             <span className="text-clay-500">feels premium</span>
           </h1>
 
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-700">
-            SAT &amp; ACT pathways, grad-school tracks, exam-day readiness checks,
-            USACO &amp; olympiad coaching, plus research mentorship and internship matching.
+            SAT &amp; ACT pathways, Universal Proctor Bypass, full lockdown stack,
+            USACO &amp; contests, plus research papers and internship matching.
           </p>
 
           <label className="group mt-8 flex max-w-2xl items-center gap-3 rounded-full border-2 border-ink-900 bg-cream-50 px-5 py-3.5 shadow-[3px_4px_0_0_var(--color-ink-900)] transition-shadow focus-within:shadow-[5px_6px_0_0_var(--color-ink-900)]">
@@ -70,7 +70,7 @@ export function Hero({ query, onQuery, active, onCategory }: HeroProps) {
             <input
               value={query}
               onChange={(event) => onQuery(event.target.value)}
-              placeholder="Search SAT, readiness, USACO, IELTS…"
+              placeholder="Search SAT, proctor, USACO, IELTS…"
               className="w-full bg-transparent text-[1.05rem] outline-none placeholder:text-ink-300"
               aria-label="Search the catalog"
             />
@@ -114,13 +114,13 @@ export function Hero({ query, onQuery, active, onCategory }: HeroProps) {
             <p className="eyebrow">Services</p>
             <div className="mt-3 flex flex-wrap items-center gap-3">
               <a
-                href="#services"
+                href="/research"
                 className="focus-ring inline-flex items-center gap-2 rounded-full border-2 border-ink-900/25 bg-cream-50/70 px-4 py-2.5 font-semibold transition-colors hover:border-ink-900 hover:bg-cream-50"
               >
-                <FileText className="size-4 text-clay-500" /> Research mentorship
+                <FileText className="size-4 text-clay-500" /> Research papers
               </a>
               <a
-                href="#services"
+                href="/internships"
                 className="focus-ring inline-flex items-center gap-2 rounded-full border-2 border-ink-900/25 bg-cream-50/70 px-4 py-2.5 font-semibold transition-colors hover:border-ink-900 hover:bg-cream-50"
               >
                 <Briefcase className="size-4 text-clay-500" /> Internships

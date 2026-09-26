@@ -22,6 +22,7 @@ export function CollectionSection({
   const featured = featuredFirst ? products.find((product) => product.featured) : undefined;
   const rest = products.filter((product) => product !== featured);
   const visible = limit ? rest.slice(0, limit) : rest;
+  const collectionHref = id === "proctor" ? "/category/proctoring" : `/category/${id}`;
 
   return (
     <section id={id} className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
@@ -30,7 +31,7 @@ export function CollectionSection({
         title={title}
         subtitle={subtitle}
         action={
-          <Button as="a" href="#catalog" variant="outline" size="sm">
+          <Button as="a" href={collectionHref} variant="outline" size="sm">
             View all
           </Button>
         }
@@ -49,7 +50,7 @@ export function CollectionSection({
         </div>
         {limit && rest.length > limit ? (
           <div className="mt-6 text-center">
-            <Button as="a" href="#catalog" variant="outline">
+            <Button as="a" href={collectionHref} variant="outline">
               See all {rest.length + (featured ? 1 : 0)} items
             </Button>
           </div>
